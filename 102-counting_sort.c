@@ -5,6 +5,7 @@
  * arr_max - array max
  * @array: array
  * @size: size of the array
+ * Return: max
  */
 int arr_max(int *array, size_t size)
 {
@@ -28,11 +29,8 @@ void counting_sort(int *array, size_t size)
 	int *arr, *o_arr, max, num;
 	size_t i;
 
-	if (size < 2)
-	{
-		print_array(array, size);
+	if (size < 2 || !array)
 		return;
-	}
 	max = arr_max(array, size);
 
 	arr = malloc(sizeof(size_t) * (max + 1));
