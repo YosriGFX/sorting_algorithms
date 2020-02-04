@@ -65,5 +65,5 @@ void qs(int *array, int first, int last, size_t size)
  */
 void quick_sort(int *array, size_t size)
 {
-	qs(array, 0, size -1, size);
+	qs(array, 0, size - 1, size);
 }
