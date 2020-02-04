@@ -64,7 +64,10 @@ void quick_sort_hoare(int *array, size_t size)
 	if (!array)
 		return;
 	if (size < 2)
+	{
+		print_array(array, size);
 		return;
+	}
 
 	qsh(array, 0, size - 1, size);
 }
