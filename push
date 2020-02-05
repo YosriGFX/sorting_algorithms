@@ -1,6 +1,0 @@
-git pull
-git add .
-git commit -m "[init] insertion sort"
-git push
-clear
-echo "\n\n  Done Mr Yosri  \n\n"
