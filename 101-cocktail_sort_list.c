@@ -32,6 +32,7 @@ void swapme(listint_t *current, listint_t *current_old, listint_t **list)
 void cocktail_sort_list(listint_t **list)
 {
 	listint_t *check = *list, *first = NULL, *last = NULL;
+
 	if (!(*list))
 		return;
 	if (!(*list)->next)
