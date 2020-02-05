@@ -1,14 +1,16 @@
 #include "sort.h"
 
 /**
- * swap - swap the nodes themselves.
- *
+ * swapme - swap the nodes themselves.
+ * @current: pointer.
+ * @current_old: pointer.
  * @list: doubly linked list
  */
 void swapme(listint_t *current, listint_t *current_old, listint_t **list)
 {
 	listint_t *temp1 = current->next;
 	listint_t *temp2 = current_old->prev;
+
 	if (temp1 != NULL)
 		temp1->prev = current_old;
 	if (temp2 != NULL)
@@ -31,7 +33,7 @@ void cocktail_sort_list(listint_t **list)
 {
 	listint_t *check = *list, *first = NULL, *last = NULL;
 
-	if (!list || (*list)->next == NULL)
+	if (!(*list) || !((*list)->next) || !list)
 		return;
 	do {
 		while (check->next)
