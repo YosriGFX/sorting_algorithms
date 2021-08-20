@@ -403,3 +403,5 @@ alex@/tmp/sort$
 - **[Yosri Ghorbel](https://github.com/YosriGFX)**
 - **[Adib Gruise](https://github.com/s0m35h1t)**
 ##
+
+> Copyright © 2021 [Holberton School](https://www.holbertonschool.com). All rights reserved.
